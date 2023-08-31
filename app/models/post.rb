@@ -3,9 +3,13 @@ class Post < ApplicationRecord
   has_many :comments
   has_many :likes
 
+  private
+
   def increment_user_posts_count
     author.increment!(:posts_counter)
   end
+
+  public
 
   def recent_comments
     comments.order(created_at: :desc).limit(5)
