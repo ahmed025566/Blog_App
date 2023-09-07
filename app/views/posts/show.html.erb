@@ -1,7 +1,13 @@
 <div class="PostShow">
-  <h1 clas="showPsotTilte"><%= @post.title %> by <%= @user.name%> </h1>
+  <h1 clas="showPsotTilte"><%= @post.title %> by <%= @post.author.name%> </h1>
   <p class="countersShow">Comments: <%= @post.comments_counter || 0%>, Likes: <%= @post.likes_counter || 0%></p>
   <p class="showPostText"><%= @post.text %> </p>
+</div>
+<div class="interaction">
+<%= link_to "Comment", new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id ), class: "commentNew" %>
+<%= form_with model: @like, url: user_post_likes_path(post_id: @post.id) do |form| %>
+  <%= form.submit "Like", class: "like" %>
+<% end %>
 </div>
 <div class="commentsShow">
   <% @comments.each do |comment| %>
