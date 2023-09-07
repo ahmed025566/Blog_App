@@ -1,4 +1,15 @@
-<h1><%= @post.title %></h1>
-<p>Text : <%= @post.text %> </p>
-<p>Created at: <%= @post.created_at %></p>
-<p>Updated at: <%= @post.updated_at %></p>
+<div class="PostShow">
+  <h1 clas="showPsotTilte"><%= @post.title %> by <%= @user.name%> </h1>
+  <p class="countersShow">Comments: <%= @post.comments_counter || 0%>, Likes: <%= @post.likes_counter || 0%></p>
+  <p class="showPostText"><%= @post.text %> </p>
+</div>
+<div class="commentsShow">
+  <% @comments.each do |comment| %>
+    <p> <%= comment.author.name%>: <%= comment.text%></p>
+  <% end %> 
+</div>
+
+
+
+
+

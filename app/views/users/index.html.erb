@@ -1,11 +1,11 @@
-<!-- users/index.html -->
-<h1>Users</h1>
-
-<ul>
+<div class = "userIndex">
   <% @users.each do |user| %>
-    <li>
-      <%= link_to user.name, user_path(user) %>
-    </li>
-    
+    <a href="users/<%=user.id%>"><div class='userWraper'>
+      <%= image_tag(user.photo) %>  
+      <div class='userInner'>
+        <h1 class="name"><%= link_to user.name, user_path(user)%></h1>
+        <p class='num'>Number of posts: <%= user.posts_counter || 0%></p>
+      </div>
+    </div></a>
   <% end %>
-</ul>
+</div>
