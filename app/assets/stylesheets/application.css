@@ -21,7 +21,7 @@
   height: 150px;
   display: flex;
   justify-content: space-between;
-  margin: 40px auto 0px auto;
+  margin: 40px auto 0 auto;
 }
 
 img {
@@ -70,7 +70,7 @@ a {
   height: 220px;
   font-size: 20px;
   font-weight: 650;
-  padding: 10px
+  padding: 10px;
 }
 
 .bioHead {
@@ -90,7 +90,7 @@ a {
 }
 
 .text {
-  margin: 0px 0 0px 5px;
+  margin: 0 0 0 5px;
 }
 
 .counters {
@@ -156,5 +156,5 @@ a {
   overflow-y: scroll;
   overflow-x: hidden;
   font-size: 22px;
-  font-weight: 650; 
+  font-weight: 650;
 }
