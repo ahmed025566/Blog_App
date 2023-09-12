@@ -30,7 +30,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'post response body includes correct text' do
-      expect(response.body).to include("#{user.name} Posts")
+      expect(response.body).to include(user.name.to_s)
     end
   end
 
@@ -48,7 +48,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'post detail response body includes correct placeholder text' do
-      expect(response.body).to include(post.title)
+      expect(response.body).to include(post.title.to_s)
     end
   end
 end

@@ -1,9 +1,10 @@
 <div class = "userIndex">
   <div class='userWraper'>
    <%= image_tag(@user.photo) %>  
+   
    <div class='userInner'>
-     <h1 class="name"><%= @user.name%></h1>
-     <p class='num'>Number of posts: <%= @user.posts_counter || 0%></p>
+    <h1 class="name"><%= @user.name%></h1>
+    <p class='num'>Number of posts: <%= @user.posts_counter || 0%></p>
    </div>
   </div>
   
@@ -16,8 +17,17 @@
     </div>
     </a>
     <div class="comments">
-      <% post.recent_comments.each do |comment|%>
-        <p> <%= comment.author.name%>: <%= comment.text%></p>
+      <% @comments.each do |comment|%>
+        <% if comment.post_id == post.id%>
+          <p>
+          <% @users.each do |user|%>
+            <% if user.id == comment.user_id %>
+              <%= user.name %>:  <%= comment.text%>
+            <% end %>
+          <% end %>
+          </p>
+         
+        <% end %> 
       <% end %>
     </div>
   <% end %>

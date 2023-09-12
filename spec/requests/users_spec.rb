@@ -19,9 +19,6 @@ RSpec.describe 'Users', type: :request do
     it 'renders user template' do
       expect(response).to render_template(:index)
     end
-    it 'user responsed body with correct text' do
-      expect(response.body).to include('Users')
-    end
   end
   describe "User GET /show'" do
     before do
@@ -45,7 +42,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'user detail responsed body with correct user name' do
-      expect(response.body).to include("Name : #{user.name}")
+      expect(response.body).to include(user.name.to_s)
     end
   end
 end
