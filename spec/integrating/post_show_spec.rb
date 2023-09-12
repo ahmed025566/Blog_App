@@ -27,4 +27,14 @@ RSpec.describe 'Post show page ', type: :feature do
     visit user_post_path(user_id: @user.id, id: @post.id)
     expect(page).to have_content(@post.text)
   end
+
+  it 'should display the user name of the commentor' do
+    visit user_post_path(user_id: @user.id, id: @post.id)
+    expect(page).to have_content(@comment.author.name)
+  end
+
+  it 'should display the comment each commentor left' do
+    visit user_post_path(user_id: @user.id, id: @post.id)
+    expect(page).to have_content(@comment.text)
+  end
 end
