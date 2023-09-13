@@ -10,14 +10,3 @@ eagerLoadControllersFrom("controllers", application)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
 
-const parent = document.querySelector('.right')
-const child = document.querySelector('.addPost')
-parent.addEventListener('mouseover', () => {
-  child.style.background = 'white'
-  child.style.color = 'black'
-})
-
-parent.addEventListener('mouseout', () => {
-    child.style.background = 'black'
-    child.style.color = 'white'
-})

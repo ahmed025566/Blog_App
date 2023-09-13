@@ -1,206 +1,257 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #000;
-  color: #fff;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap");
 
-.userIndex {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2B3452;
+    color: #fff;
+    font-family: 'Shantell Sans', cursive;
+  }
 
-.userWraper {
-  width: 70%;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  margin: 40px auto 0 auto;
-}
+  .userIndex {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-img {
-  width: 160px;
-  height: 150px;
-}
+  .userWraper {
+    width: 70%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+  }
 
-.userInner {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  border: 2px solid white;
-}
+  img {
+    width: 160px;
+    height: 150px;
+  }
 
-.name {
-  font-size: 40px;
-  height: 60px;
-  position: relative;
-  top: 21%;
-  left: 10px;
-}
+  .userInner {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
 
-a {
-  color: white;
-  text-decoration: none;
-}
+  .name {
+    font-size: 40px;
+    height: 60px;
+    position: relative;
+    top: 21%;
+    left: 10px;
+  }
 
-.num {
-  position: absolute;
-  height: 30px;
-  font-size: 19px;
-  font-weight: 600;
-  margin: 100px 10px 0 0;
-  right: 200px;
-}
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
-.postsLink {
-  font-size: 40px;
-  position: relative;
-}
+  .num {
+    position: absolute;
+    height: 30px;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 100px 10px 0 0;
+    right: 200px;
+  }
 
-.bio {
-  width: 70%;
-  border: 2px solid #fff;
-  margin-top: 30px;
-  height: 220px;
-  font-size: 20px;
-  font-weight: 650;
-  padding: 10px;
-}
+  .postsLink {
+    font-size: 40px;
+    position: relative;
+  }
 
-.bioHead {
-  margin-bottom: 10px;
-}
+  .bio {
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-top: 30px;
+    height: 220px;
+    font-size: 20px;
+    font-weight: 650;
+    padding: 10px;
+  }
 
-.post {
-  width: 70%;
-  height: 120px;
-  margin-top: 20px;
-  border: 2px solid white;
-  font-weight: 600;
-}
+  .bioHead {
+    margin-bottom: 10px;
+  }
 
-.title {
-  display: inline-block;
-  margin: 5px  0 10px 5px;
-}
+  .post {
+    width: 70%;
+    height: 120px;
+    margin-top: 20px;
+    border: 2px solid white;
+    font-weight: 600;
+  }
 
-.text {
-  margin: 0 0 0 5px;
-}
+  .title {
+    display: inline-block;
+    margin: 5px  0 10px 5px;
+  }
 
-.counters {
-  position: relative;
-  left: 75%;
-  width: 220px;
-}
+  .text {
+    margin: 0 0 0 5px;
+  }
 
-.seePosts {
-  width: 200px;
-  height: 40px;
-  font-size: 20px;
-  margin: 20px;
-  font-weight: 600;
-  cursor: pointer;
-}
+  .counters {
+    position: relative;
+    left: 75%;
+    width: 220px;
+  }
 
-.comments {
-  width: 70%;
-  height: 150px;
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  border: 2px solid white;
-  overflow-y: scroll;
-}
+  .seePosts {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 
-.postDetails {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+  .comments {
+    width: 70%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    overflow-y: scroll;
+  }
 
-.PostShow {
-  width: 85%;
-  height: 300px;
-  margin: 40px auto 10px auto;
-  border: 2px solid white;
-  padding: 10px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
+  .postDetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-.countersShow {
-  position: relative;
-  left: 78%;
-  bottom: 15px;
-  font-weight: 650;
-  font-size: 18px;
-}
+  .PostShow {
+    width: 85%;
+    height: 300px;
+    margin: 40px auto 10px auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-.showPostText {
-  margin-top: 10px;
-  font-size: 22px;
-  font-weight: 600;
-}
+  .countersShow {
+    position: relative;
+    left: 78%;
+    bottom: 15px;
+    font-weight: 650;
+    font-size: 18px;
+  }
 
-.commentsShow {
-  width: 85%;
-  height: 250px;
-  margin: 40px auto 10px auto;
-  border: 2px solid white;
-  padding: 10px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-size: 22px;
-  font-weight: 650;
-}
+  .showPostText {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+  }
 
-.right {
-  width: 70%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: 600;
-  margin: 30px auto 0 auto;
-  border: 2px solid white;
-  transition: all 1s;
-}
+  .commentsShow {
+    width: 85%;
+    height: 250px;
+    margin: 40px auto 10px auto;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 22px;
+    font-weight: 650;
+  }
 
-.right:hover {
-  color: #000;
-  background-color: #fff;
-  transition: all 1s;
-}
+  .addPost {
+    width: 70%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 30px auto 0 auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 1s;
+  }
 
-.interaction {
-  width: 85%;
-  margin: 20px auto -10px auto;
-  padding-left: 10px;
-  display: flex;
-}
+  .addPost:hover {
+    color: #000;
+    background-color: #fff;
+    transition: all 1s;
+  }
 
-.like {
-  width: 100px;
-  height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-}
+  .interaction {
+    width: 85%;
+    margin: 20px auto -10px auto;
+    padding-left: 10px;
+    display: flex;
+  }
 
-.commentNew {
-  width: 150px;
-  margin-right: 15px;
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  border: 2.5px solid white;
-}
+  .like {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .commentNew {
+    width: 150px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border: 2.5px solid white;
+    border-radius: 5px;
+  }
+
+  main {
+    width: 60%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  label {
+    font-size: 22px;
+    font-weight: 650;
+    margin: 4px;
+  }
+
+  .title {
+    height: 40px;
+    margin: 0;
+  }
+  input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .btn {
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+  }
