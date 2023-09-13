@@ -1,273 +1,270 @@
-  @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #2B3452;
-    color: #fff;
-    font-family: 'Shantell Sans', cursive;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2b3452;
+  color: #fff;
+  font-family: 'Shantell Sans', cursive;
+}
 
-  .userIndex {
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.userIndex {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .userWraper {
-    width: 70%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto 0 auto;
-  }
+.userWraper {
+  width: 70%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0 auto;
+}
 
-  img {
-    width: 160px;
-    height: 150px;
-  }
+img {
+  width: 160px;
+  height: 150px;
+}
 
-  .userInner {
-    height: 100%;
-    width: 70%;
-    display: flex;
-    border-radius: 5px;
-    border: 1px solid white;
-  }
+.userInner {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid white;
+}
 
-  .name {
-    font-size: 40px;
-    height: 60px;
-    position: relative;
-    top: 21%;
-    left: 10px;
-  }
+.name {
+  font-size: 40px;
+  height: 60px;
+  position: relative;
+  top: 21%;
+  left: 10px;
+}
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
+a {
+  color: white;
+  text-decoration: none;
+}
 
-  .num {
-    position: absolute;
-    height: 30px;
-    font-size: 19px;
-    font-weight: 600;
-    margin: 100px 10px 0 0;
-    right: 200px;
-  }
+.num {
+  position: absolute;
+  height: 30px;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 100px 10px 0 0;
+  right: 200px;
+}
 
-  .postsLink {
-    font-size: 40px;
-    position: relative;
-  }
+.postsLink {
+  font-size: 40px;
+  position: relative;
+}
 
-  .bio {
-    width: 70%;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    margin-top: 30px;
-    height: 220px;
-    font-size: 20px;
-    font-weight: 650;
-    padding: 10px;
-  }
+.bio {
+  width: 70%;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  margin-top: 30px;
+  height: 220px;
+  font-size: 20px;
+  font-weight: 650;
+  padding: 10px;
+}
 
-  .bioHead {
-    margin-bottom: 10px;
-  }
+.bioHead {
+  margin-bottom: 10px;
+}
 
-  .post {
-    width: 70%;
-    height: 120px;
-    margin-top: 20px;
-    border: 2px solid white;
-    font-weight: 600;
-  }
+.post {
+  width: 70%;
+  height: 120px;
+  margin-top: 20px;
+  border: 2px solid white;
+  font-weight: 600;
+}
 
-  .title {
-    display: inline-block;
-    margin: 5px  0 10px 5px;
-  }
+.title {
+  display: inline-block;
+  margin: 5px  0 10px 5px;
+}
 
-  .text {
-    margin: 0 0 0 5px;
-  }
+.text {
+  margin: 0 0 0 5px;
+}
 
-  .counters {
-    position: relative;
-    left: 75%;
-    width: 220px;
-  }
+.counters {
+  position: relative;
+  left: 75%;
+  width: 220px;
+}
 
-  .seePosts {
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    margin: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+.seePosts {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-  .comments {
-    width: 70%;
-    height: 150px;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    border: 2px solid white;
-    overflow-y: scroll;
-  }
+.comments {
+  width: 70%;
+  height: 150px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid white;
+  overflow-y: scroll;
+}
 
-  .postDetails {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.postDetails {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-  .PostShow {
-    width: 85%;
-    height: 300px;
-    margin: 40px auto 10px auto;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+.PostShow {
+  width: 85%;
+  height: 300px;
+  margin: 40px auto 10px auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
-  .countersShow {
-    position: relative;
-    left: 78%;
-    bottom: 15px;
-    font-weight: 650;
-    font-size: 18px;
-  }
+.countersShow {
+  position: relative;
+  left: 78%;
+  bottom: 15px;
+  font-weight: 650;
+  font-size: 18px;
+}
 
-  .showPostText {
-    margin-top: 10px;
-    font-size: 22px;
-    font-weight: 600;
-  }
+.showPostText {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
 
-  .commentsShow {
-    width: 85%;
-    height: 250px;
-    margin: 40px auto 10px auto;
-    border-radius: 5px;
-    border: 2px solid white;
-    padding: 10px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-size: 22px;
-    font-weight: 650;
-  }
+.commentsShow {
+  width: 85%;
+  height: 250px;
+  margin: 40px auto 10px auto;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 22px;
+  font-weight: 650;
+}
 
-  .addPost {
-    width: 70%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: 600;
-    margin: 30px auto 0 auto;
-    border: 2px solid white;
-    border-radius: 5px;
-    transition: all 1s;
-  }
+.addPost {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 30px auto 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 1s;
+}
 
-  .addPost:hover {
-    color: #000;
-    background-color: #fff;
-    transition: all 1s;
-  }
+.addPost:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 1s;
+}
 
-  .interaction {
-    width: 85%;
-    margin: 20px auto -10px auto;
-    padding-left: 10px;
-    display: flex;
-  }
+.interaction {
+  width: 85%;
+  margin: 20px auto -10px auto;
+  padding-left: 10px;
+  display: flex;
+}
 
-  .like {
-    width: 100px;
-    height: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+.like {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-  .commentNew {
-    width: 150px;
-    margin-right: 15px;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    border: 2.5px solid white;
-    border-radius: 5px;
-  }
+.commentNew {
+  width: 150px;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border: 2.5px solid white;
+  border-radius: 5px;
+}
 
-  main {
-    width: 60%;
-    margin: 50px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+main {
+  width: 60%;
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  label {
-    font-size: 22px;
-    font-weight: 650;
-    margin: 4px;
-  }
+label {
+  font-size: 22px;
+  font-weight: 650;
+  margin: 4px;
+}
 
-  .title {
-    height: 40px;
-    margin: 0;
-  }
-  input {
-    width: 100%;
-    border-radius: 5px;
-  }
+input {
+  width: 100%;
+  border-radius: 5px;
+}
 
-  .btn {
-    height: 40px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 700;
-  }
+.btn {
+  height: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+}
 
-  .center {
-    text-align: center;
-    margin: 20px;
-  }
+.center {
+  text-align: center;
+  margin: 20px;
+}
 
-  .new_user {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-  }
+.new_user {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
 
-.signupField, .signinField {
+.signupField,
+.signinField {
   height: 40px;
   margin-bottom: 10px;
   padding-left: 10px;
