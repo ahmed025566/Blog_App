@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -236,7 +235,8 @@ main {
   margin-top: 20px;
 }
 
-.notice, .alert {
+.notice,
+.alert {
   text-align: center;
   margin-top: 20px;
   font-size: 18px;
@@ -312,7 +312,7 @@ input {
 }
 
 .navbar-link {
- margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .logout {
@@ -325,6 +325,6 @@ input {
 .delete {
   position: relative;
   left: 90%;
-   font-size: 22px; 
+  font-size: 22px;
   border: 2px solid white;
 }
