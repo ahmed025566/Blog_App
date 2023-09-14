@@ -5,6 +5,8 @@ class PostsController < ApplicationController
     @posts = @user.posts
     @comments = Comment.all
     @users = User.all
+
+    render json: @posts
   end
 
   def show
