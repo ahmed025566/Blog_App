@@ -1,4 +1,7 @@
 <div class="PostShow">
+  <% if can? :destroy, @post %>
+    <%= link_to "Remove", "/users/#{@post.author_id}/posts/#{@post.id}", 'data-turbo-method': :delete %>
+  <% end %>
   <h1 clas="showPsotTilte"><%= @post.title %> by <%= @post.author.name%> </h1>
   <p class="countersShow">Comments: <%= @post.comments_counter || 0%>, Likes: <%= @post.likes_counter || 0%></p>
   <p class="showPostText"><%= @post.text %> </p>
@@ -14,6 +17,10 @@
     <p>
       <% @users.each do |user|%>
         <% if user.id == comment.user_id %>
+        <% if can? :destroy, comment %>
+        <%= link_to "Delete Comment" , "/users/#{@post.author_id}/posts/#{@post.id}/comments/#{comment.id}", 
+        'data-turbo-method': :delete %>
+        <% end %>
           <%= user.name %>:  <%= comment.text%>
         <% end %>
       <% end %>

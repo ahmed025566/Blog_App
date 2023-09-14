@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts
@@ -25,6 +26,15 @@ class PostsController < ApplicationController
     else
       render :new, alert: 'An error has occurred while creating the post'
     end
+  end
+
+  def destroy
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:id])
+    @post.destroy
+    @user.posts_counter -= 1
+    @user.save
+    redirect_to user_posts_path(@user)
   end
 
   def post_params
