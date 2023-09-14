@@ -14,14 +14,14 @@
 </div>
 <div class="commentsShow">
   <% @comments.includes([:author]).each do |comment| %>
-    <p>
+    <p class="comment">
       <% @users.each do |user|%>
         <% if user.id == comment.user_id %>
-        <% if can? :destroy, comment %>
-        <%= link_to "Delete Comment" , "/users/#{@post.author_id}/posts/#{@post.id}/comments/#{comment.id}", 
-        'data-turbo-method': :delete %>
-        <% end %>
           <%= user.name %>:  <%= comment.text%>
+          <% if can? :destroy, comment %>
+          <%= link_to "Delete Comment" , "/users/#{@post.author_id}/posts/#{@post.id}/comments/#{comment.id}", 
+          'data-turbo-method': :delete, class:('deleteComment') %>
+          <% end %>
         <% end %>
       <% end %>
     </p>

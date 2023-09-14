@@ -94,7 +94,9 @@ a {
 
 .title {
   display: inline-block;
-  margin: 5px  0 10px 5px;
+
+  /* margin: 5px  0 10px 5px; */
+  height: 50px;
 }
 
 .text {
@@ -325,6 +327,26 @@ input {
 .delete {
   position: relative;
   left: 90%;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
   font-size: 22px;
   border: 2px solid white;
+  border-radius: 5px;
+}
+
+.comment {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.deleteComment {
+  position: relative;
+  left: 56%;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
 }
