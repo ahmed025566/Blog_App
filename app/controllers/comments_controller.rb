@@ -4,13 +4,26 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new(user_id: current_user.id, post_id: params[:post_id], **comment_params)
+    if request.format.html?
+      @comment = Comment.new(user_id: current_user.id, post_id: params[:post_id], **comment_params)
 
-    if @comment.save
-      flash[:notice] = 'comment created successfully'
-      redirect_to user_post_path(user_id: current_user.id, id: params[:post_id])
+      if @comment.save
+        flash[:notice] = 'Your comment was added successfully'
+        redirect_to user_posts_path(params[:user_id])
+      else
+        flash[:alert] = 'Opps, something went wrong, try again!'
+        render :new
+      end
     else
-      render :new, alert: 'An error has occurred while creating the comment'
+      begin
+        @comment = Comment.new(user: User.find(params[:user_id]), post: Post.find(params[:post_id]), **comment_params)
+        render json: { message: 'Comment created successfully' }, status: 201 if @comment.save
+        # else
+        render json: @comment.errors, status: 401 unless @comment.save
+        # end
+      rescue ActiveRecord::RecordNotFound
+        render json: { message: 'Invalid post or user id' }, status: 404
+      end
     end
   end
 
