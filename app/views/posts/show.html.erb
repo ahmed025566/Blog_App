@@ -1,6 +1,6 @@
 <div class="PostShow">
   <% if can? :destroy, @post %>
-    <%= link_to "Remove", "/users/#{@post.author_id}/posts/#{@post.id}", 'data-turbo-method': :delete %>
+    <%= link_to "Remove", "/users/#{@post.author_id}/posts/#{@post.id}", 'data-turbo-method': :delete, class:('delete') %>
   <% end %>
   <h1 clas="showPsotTilte"><%= @post.title %> by <%= @post.author.name%> </h1>
   <p class="countersShow">Comments: <%= @post.comments_counter || 0%>, Likes: <%= @post.likes_counter || 0%></p>
