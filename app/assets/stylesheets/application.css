@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #2b3452;
   color: #fff;
+  overflow-x: hidden;
   font-family: 'Shantell Sans', cursive;
 }
 
@@ -17,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .userWraper {
@@ -233,6 +236,12 @@ main {
   margin-top: 20px;
 }
 
+.notice, .alert {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
 label {
   font-size: 22px;
   font-weight: 650;
@@ -293,4 +302,22 @@ input {
 .remeber-check {
   width: 10%;
   height: 20px;
+}
+
+.navBar {
+  font-size: 22px;
+  margin: 20px 0 0 40%;
+  display: flex;
+  width: 70%;
+}
+
+.navbar-link {
+ margin-left: 20px; 
+}
+
+.logout {
+  border: none;
+  font-size: 22px;
+  margin-left: 10px;
+  cursor: pointer;
 }
