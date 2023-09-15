@@ -13,6 +13,8 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @comments = @post.comments
     @users = User.all
+
+    render json: { post: @post, comments: @comments }
   end
 
   def new
