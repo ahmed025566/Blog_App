@@ -57,8 +57,20 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Simple UI**
-- **Scalable**
+- Data Model.
+- Processing data in models.
+- Validations and Model specs.
+- Setup controllers and basic routing.
+- Controllers specs.
+- Structured views.
+- Styling.
+- Form for creating post and comments.
+- Feature to like a post.
+- Eager loading.
+- Integration specs for Views and fixing n+1 problems.
+- Devise.
+- Authorization rules.
+- API endpoints.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,9 +130,7 @@ rspec spec/
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **UI** :eyes:
-- **Authentication and Authorization** :eyes:
-- **API** :eyes:
+- API documentation.
 
 <p align="right"><a href="#readme-top">👆</a></p>
 

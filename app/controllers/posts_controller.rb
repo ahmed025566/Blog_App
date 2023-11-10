@@ -5,12 +5,30 @@ class PostsController < ApplicationController
     @posts = @user.posts
     @comments = Comment.all
     @users = User.all
+    respond_to do |format|
+      format.html {
+        
+      }
+      format.json {
+        render json: @posts
+      }
+    end
+   
   end
 
   def show
     @post = Post.find(params[:id])
     @comments = @post.comments
     @users = User.all
+    respond_to do |format|
+      format.html {
+        
+      }
+      format.json {
+        render json: { post: @post, comments: @comments }
+      }
+    end
+    
   end
 
   def new
